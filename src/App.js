@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/general.css';
+import './styles/general-sm.css';
+import './styles/general-md.css';
+import './styles/general-lg.css';
 import Nav from './components/Nav';
 import Home from './pages/Home';
 
@@ -17,12 +22,12 @@ class App extends Component {
 
   render() {
     return(
-      <div className="grid bg-grey-10 bg-n-gradient">
+      <>
         <Nav />
         {
           this.routes()
         }
-      </div>
+      </>
       );
     }
 }
