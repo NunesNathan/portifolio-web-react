@@ -42,3 +42,15 @@
   color: var(--neithans-grey-3);
   list-style-type: none;
 }
+
+a {
+  color: var(--neithans-grey-2);
+}
+
+a:active,
+a:hover,
+a:focus {
+  font-size: 1.15rem;
+  color: var(--neithans-grey-4);
+  border: none;
+}

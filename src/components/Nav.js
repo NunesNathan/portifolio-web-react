@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import photo from "../assets/nathannunesphoto.jpg"
+import { Presentation, Links, Footer } from '../data/nav-data';
+import LinkTo from './LinkTo';
 
-export default class Nav extends Component {
-  render() {
-    return (
-      <nav className="d-flex flex-column">
-        <img className="photo" src={ photo } alt="Imagem de Nathan Nunes" />
-        <p className="name">Nathan Nunes</p>
-        <p className="job">Front-end Developer</p>
-        <ul className="link-list">
-          <li>Sobre</li>
-          <li>Projetos</li>
-          <li>Github</li>
-          <li>Linkedin</li>
-        </ul>
-        <p className="nav-footer">{'2022 > Criado e idealizado por Nathan Nunes com 💚'}</p>
-      </nav>);
-  }
+export default function Nav() {
+  return (
+    <nav className="d-flex flex-column">
+      <img className="photo" src={photo} alt="Imagem de Nathan Nunes" />
+      <p className="name">{Presentation.name}</p>
+      <p className="job">{Presentation.occupation}</p>
+      <ul className="link-list">
+        {Links.map((eachLink) => <LinkTo key={eachLink.text} {...eachLink} />)}
+      </ul>
+      <p className="nav-footer">{Footer.text}</p>
+    </nav>);
 }
