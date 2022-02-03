@@ -1,0 +1,39 @@
+.absolute {
+  position: absolute;
+  right: 0;
+  width: 100vw;
+  justify-content: space-between;
+  height: 8vh;
+  align-items: center;
+  background-color: var(--neithans-grey-6);
+  box-shadow: 0 4px 6px 2px var(--neithans-grey-9);
+}
+
+.absolute * {
+  color: var(--neithans-grey-3);
+}
+
+.absolute nav {
+  /* width: 60%; */
+  justify-content: space-evenly;
+  position: absolute;
+  left: 29%;
+}
+
+.absolute, .absolute nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.mailTo {
+  position: absolute;
+  right: 1vw;
+}
+
+.absolute li > a {
+  margin: 0 2vw;
+}
+
+.absolute li > a:hover {
+  font-size: inherit;
+}

@@ -1,0 +1,128 @@
+@media (max-width: 767.98px) {
+  nav.d-flex {
+    background-color: var(--neithans-grey-8) !important;
+    box-shadow: 0 3px 3px 1px var(--neithans-grey-9);
+  }
+
+  nav.d-flex img.photo {
+    border-radius: 100%;
+    border: 4px var(--neithans-grey-9) solid;
+    width: 50%;
+    margin: 2vh auto;
+  }
+
+  nav.d-flex > p:is( .name, .job) {
+    margin: 1vh auto;
+  }
+
+  nav.d-flex ul.link-list {
+    display: flex;
+    flex-direction: row;
+    margin: 1vh 8% 2vh 0;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+
+  nav.d-flex .nav-footer {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1099.98px) {
+  nav {
+    grid-area: "nav";
+    background-color: rgba(66, 66, 66, 0);
+    text-align: center;
+    position: fixed;
+    max-width: 24.633vw;
+    height: 100%;
+  }
+
+  .photo {
+    border: 4px var(--neithans-grey-9) solid !important;
+    border-radius: 100%;
+    width: 16.43vw;
+    margin: 7.5415vh 4.07vw 2.564vh;
+  }
+
+  .nav-footer {
+    position: fixed;
+    bottom: 2vh;
+    left: 2vw;
+    max-width: 21vw;
+  }
+
+  .name {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  .job {
+    font-size: 0.85rem;
+  }
+
+  .link-list {
+    margin-top: 9vh;
+    list-style: none;
+  }
+
+  .link-list:nth-child(n) {
+    padding: 0;
+    text-align: center;
+  }
+
+  @media (max-height: 568px) {
+    .nav-footer {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  nav.d-flex.flex-column {
+    grid-area: "nav";
+    background-color: rgba(66, 66, 66, 0);
+    text-align: center;
+    position: fixed;
+    width: 24.633vw;
+    height: 100%;
+  }
+
+  .photo {
+    border: 4px var(--neithans-grey-9) solid !important;
+    border-radius: 100%;
+    max-width: 340px;
+    width: 16.43vw;
+    margin: 7.5415vh auto 2.564vh;
+  }
+
+  .nav-footer {
+    position: absolute;
+    bottom: 2vh;
+  }
+
+  .name {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  .job {
+    font-size: 0.85rem;
+  }
+
+  .link-list {
+    margin-top: 9vh;
+    list-style: none;
+  }
+
+  .link-list:nth-child(n) {
+    padding: 0;
+    text-align: center;
+  }
+
+  @media (max-height: 600px) {
+    .nav-footer {
+      display: none;
+    }
+  }
+}

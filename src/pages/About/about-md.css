@@ -11,23 +11,14 @@
   }
 
   body {
-    background-image: url(../assets/moon-2048727.jpg);
+    background-image: url(../../assets/moon-2048727.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
   }
 
-  nav {
-    grid-area: "nav";
-    background-color: rgba(66, 66, 66, 0);
-    text-align: center;
-    position: fixed;
-    max-width: 24.633vw;
-    height: 100%;
-  }
-
-  main {
+  main.about {
     grid-area: "main";
     margin-left: 24.633vw ;
     min-height: 100vh;
@@ -36,14 +27,7 @@
     background-color: rgba(189, 189, 189, 0.8);
     box-shadow: 0 1px 10px 6px var(--neithans-grey-9);
   }
-  
-  .photo {
-    border: 4px var(--neithans-grey-9) solid !important;
-    border-radius: 100%;
-    width: 16.43vw;
-    margin: 7.5415vh 4.07vw 2.564vh;
-  }
-  
+
   .welcome-text {
     margin-top: 5vh;
     margin-bottom: 4vh !important;
@@ -96,39 +80,9 @@
     margin-left: 1vw;
   }
 
-  .nav-footer {
-    position: fixed;
-    bottom: 2vh;
-    left: 2vw;
-    max-width: 21vw;
-  }
-
-  .name {
-    margin: 0;
-    font-size: 1.05rem;
-  }
-
-  .job {
-    font-size: 0.85rem;
-  }
-
-  .link-list {
-    margin-top: 9vh;
-    list-style: none;
-  }
-
-  .link-list:nth-child(n) {
-    padding: 0;
-    text-align: center;
-  }
-
   @media (max-height: 568px) {
     .card .scrollspy {
       height: 25vh;
-    }
-
-    .nav-footer {
-      display: none;
     }
   }
 }

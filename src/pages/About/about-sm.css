@@ -1,0 +1,29 @@
+@media (max-width: 767.98px) {
+  body {
+    background-color: var(--neithans-grey-3);
+  }
+
+  main.about *{
+    /* background-color: var(--neithans-grey-3); */
+    color: var(--neithans-grey-4);
+    text-align: center;  
+  }
+
+  main.about h1.welcome-text {
+    display: none;
+  }
+
+  main.about div.justify-content-sm-center .card {
+    height: 30vh;
+  }
+  
+  .card {
+    background-color: #ddd;
+    margin: 2vh auto;
+    box-shadow: 0 5px 4px 2px var(--neithans-grey-7);
+  }
+
+  main.about ol {
+    padding: 0;
+  }
+}
