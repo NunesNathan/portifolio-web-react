@@ -4,6 +4,7 @@ export const Presentation = {
 };
 
 export const Links = [
+  { text: 'Apresentação', to: '/' },
   { text: 'Sobre', to: '/about' },
   { text: 'Projetos', to: '/projects' },
   { text: 'Github', to: 'https://github.com/NunesNathan' },

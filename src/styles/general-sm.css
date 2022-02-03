@@ -5,7 +5,7 @@
 
   nav.d-flex {
     background-color: var(--neithans-grey-8) !important;
-    box-shadow: 0 3px 3px 2px var(--neithans-grey-9);
+    box-shadow: 0 3px 3px 1px var(--neithans-grey-9);
   }
 
   nav.d-flex img.photo {
@@ -31,10 +31,10 @@
     display: none;
   }
 
-  main {
-    background-color: var(--neithans-grey-3);
-    color: var(--neithans-grey-3);
-    text-align: center;
+  main *{
+    /* background-color: var(--neithans-grey-3); */
+    color: var(--neithans-grey-4);
+    text-align: center;  
   }
 
   main h1.welcome-text {
@@ -42,8 +42,16 @@
   }
 
   main div.justify-content-sm-center .card {
-    width: 100%;
     height: 30vh;
-    max-width: 600px;
+  }
+  
+  .card {
+    background-color: #ddd;
+    margin: 2vh auto;
+    box-shadow: 0 5px 4px 2px var(--neithans-grey-7);
+  }
+
+  main ol {
+    padding: 0;
   }
 }

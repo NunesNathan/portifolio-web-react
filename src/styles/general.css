@@ -47,6 +47,20 @@ a {
   color: var(--neithans-grey-2);
 }
 
+ol::-webkit-scrollbar {
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+}
+
+.card li {
+  margin-left: 1vw;
+}
+
+.card li > h5 {
+  margin-left: 4vw;
+}
+
 a:active,
 a:hover,
 a:focus {

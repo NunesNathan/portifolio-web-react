@@ -23,7 +23,7 @@
     background-color: rgba(66, 66, 66, 0);
     text-align: center;
     position: fixed;
-    width: 24.633vw;
+    max-width: 24.633vw;
     height: 100%;
   }
 
@@ -83,9 +83,24 @@
     box-shadow: -3.5px 7px 7px 2px var(--neithans-grey-9);
   }
 
+  .card .scrollspy {
+    position: relative;
+    overflow: auto;
+    padding: 0;
+    height: 29vh;
+  }
+
+  .card li > h5 {
+    padding: 0;
+    display: inline-block;
+    margin-left: 1vw;
+  }
+
   .nav-footer {
-    position: absolute;
+    position: fixed;
     bottom: 2vh;
+    left: 2vw;
+    max-width: 21vw;
   }
 
   .name {
@@ -105,5 +120,15 @@
   .link-list:nth-child(n) {
     padding: 0;
     text-align: center;
+  }
+
+  @media (max-height: 568px) {
+    .card .scrollspy {
+      height: 25vh;
+    }
+
+    .nav-footer {
+      display: none;
+    }
   }
 }
