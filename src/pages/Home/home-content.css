@@ -1,0 +1,81 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  width: 60vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+
+.home-content .land-photo {
+  position: absolute;
+  left: 15%;
+  height: 42%;
+  margin-right: 3vw;
+  margin-top: 10vh;
+  border-radius: 7%;
+  opacity: 90%;
+  box-shadow: 2px -5px 80px 110px var(--neithans-grey-9);
+}
+
+.land-photo-back {
+  position: absolute;
+  left: 13%;
+  bottom: 24%;
+  opacity: 11%;
+  z-index: -10;
+  border-radius: 7%;
+  height: 50%;
+}
+
+.landpage-presentation {
+  position: absolute;
+  bottom: 24%;
+  right: 15%;
+  height: 50%;
+  opacity: 92%;
+  border-radius: 7%;
+  width: 39%;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.back-presentation {
+  position: absolute;
+  bottom: 24%;
+  right: 15%;
+  opacity: 30%;
+  background: linear-gradient(
+   to bottom,
+   var(--neithans-grey-6) 10%,
+   var(--neithans-grey-7) 45%,
+   var(--neithans-grey-8) 80%,
+   var(--neithans-grey-10) 100%
+);
+  z-index: -1;
+  background-color: var(--neithans-grey-6);
+  border-radius: 7%;
+  width: 40%;
+  height: 55vh;
+}
+
+.land-undefined:nth-child(1) {
+  font-family: 'Abril fatface';
+  font-size: 2.54rem;
+  text-align: center;
+}
+
+.land-undefined:nth-child(n+2) {
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 1.25rem;
+}

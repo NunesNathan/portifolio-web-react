@@ -7,7 +7,7 @@ import LinkTo from '../../components/LinkTo';
 export default function Nav() {
   return (
     <nav className="d-flex flex-column">
-      <img className="photo" src={photo} alt="Imagem de Nathan Nunes" />
+      <img className="nav-photo" src={photo} alt="Imagem de Nathan Nunes" />
       <p className="name">{Presentation.name}</p>
       <p className="job">{Presentation.occupation}</p>
       <ul className="link-list">

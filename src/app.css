@@ -13,7 +13,7 @@
   --neithans-grey-5: #777777;
   --neithans-grey-6: #616161;
   --neithans-grey-7: #555555;
-  --neithans-grey-8: #424242;
+  --neithans-grey-8: #080707;
   --neithans-grey-9: #333333;
   --neithans-grey-10: #1f1f1f;
   --neithans-n-danger-rgb: 202, 72, 74;
@@ -41,6 +41,7 @@
   font-family: 'Yusei Magic', sans-serif;
   color: var(--neithans-grey-3);
   list-style-type: none;
+  transition: 0.3s;
 }
 
 a {

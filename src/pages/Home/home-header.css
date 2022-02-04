@@ -14,7 +14,6 @@
 }
 
 .absolute nav {
-  /* width: 60%; */
   justify-content: space-evenly;
   position: absolute;
   left: 29%;
@@ -25,7 +24,7 @@
   flex-direction: row;
 }
 
-.mailTo {
+.mail-to {
   position: absolute;
   right: 1vw;
 }
