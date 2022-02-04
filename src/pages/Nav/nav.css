@@ -1,10 +1,10 @@
 @media (max-width: 767.98px) {
   nav.d-flex {
-    background-color: var(--neithans-grey-8) !important;
+    background-color: var(--neithans-grey-8);
     box-shadow: 0 3px 3px 1px var(--neithans-grey-9);
   }
 
-  nav.d-flex img.photo {
+  .nav-photo {
     border-radius: 100%;
     border: 4px var(--neithans-grey-9) solid;
     width: 50%;

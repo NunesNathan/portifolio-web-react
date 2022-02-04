@@ -4,7 +4,6 @@
   }
 
   main.about *{
-    /* background-color: var(--neithans-grey-3); */
     color: var(--neithans-grey-4);
     text-align: center;  
   }

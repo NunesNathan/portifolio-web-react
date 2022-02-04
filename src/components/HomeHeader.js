@@ -8,6 +8,5 @@ export default function HomeHeader() {
       <nav>
         {Links.map((eachLink) => <LinkTo key={eachLink.text} {...eachLink} />)}
       </nav>
-      <a className="mail-to" href="mailto:nunesxd7@hotmail.com">nunesxd7@hotmail.com</a>
     </header>);
 }

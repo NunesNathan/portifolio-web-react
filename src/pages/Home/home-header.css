@@ -1,38 +1,59 @@
-.absolute {
-  position: absolute;
-  right: 0;
-  width: 100vw;
-  justify-content: space-between;
-  height: 8vh;
-  align-items: center;
-  background-color: var(--neithans-grey-6);
-  box-shadow: 0 4px 6px 2px var(--neithans-grey-9);
+@media (max-width: 767.98px) {
+  .absolute {
+    background-color: var(--neithans-grey-7);
+    box-shadow: 0 3px 3px 1px var(--neithans-grey-9);
+  }
+
+  .absolute nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0.3vh 0 2vh 0;
+    justify-content: space-evenly;
+    list-style-type: none;
+    height: 5.3vh;
+    text-align: center;
+  }
+  
+  .absolute li > a:hover {
+    font-size: inherit;
+  }
 }
 
-.absolute * {
-  color: var(--neithans-grey-3);
+@media (min-width: 768px) and (max-width: 1099.98px) {
 }
 
-.absolute nav {
-  justify-content: space-evenly;
-  position: absolute;
-  left: 29%;
-}
+@media (min-width: 1100px) {
+  .absolute {
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    justify-content: space-between;
+    height: 8vh;
+    align-items: center;
+    background-color: var(--neithans-grey-6);
+    box-shadow: 0 4px 6px 2px var(--neithans-grey-9);
+  }
 
-.absolute, .absolute nav {
-  display: flex;
-  flex-direction: row;
-}
+  .absolute * {
+    color: var(--neithans-grey-3);
+  }
 
-.mail-to {
-  position: absolute;
-  right: 1vw;
-}
+  .absolute nav {
+    justify-content: space-evenly;
+    position: absolute;
+    left: 29%;
+  }
 
-.absolute li > a {
-  margin: 0 2vw;
-}
+  .absolute, .absolute nav {
+    display: flex;
+    flex-direction: row;
+  }
 
-.absolute li > a:hover {
-  font-size: inherit;
+  .absolute li > a {
+    margin: 0 2vw;
+  }
+
+  .absolute li > a:hover {
+    font-size: inherit;
+  }
 }
