@@ -22,24 +22,25 @@ export default function HomeContent() {
         })}
       </div>
       <div className='home-buttons'>
-        <button type='button' className='projects-link'>
-        <p>Me conheça melhor!</p>
-          <i
-            onMouseEnter={({ target }) => {
+        <button
+          onMouseEnter={({ target: {lastChild} }) => {
               setId(setInterval(() => {
                 const newArrow = randomRightArrow();
-                if (`${target.classList[0]} ${target.classList[1]}` !== newArrow) {
-                  target.classList = newArrow;
+                if (`${lastChild.classList[0]} ${lastChild.classList[1]}` !== newArrow) {
+                  lastChild.classList = newArrow;
                 } else {
-                  target.classList = randomRightArrow();
+                  lastChild.classList = randomRightArrow();
                 }
               }, 100));
             }}
-            onMouseLeave={({ target }) => {
+          onMouseLeave={({ target: { lastChild } }) => {
               clearInterval(id);
-              target.classList = 'fas fa-caret-right';
+              lastChild.classList = 'fas fa-caret-right';
             }}
-            className="fas fa-long-arrow-alt-right" />
+          type='button'
+          className='projects-link'>
+          <p>Me conheça melhor!</p>
+          <i className="fas fa-long-arrow-alt-right" />
           </button>
       </div>
       <a className="mail-to" href="mailto:nunesxd7@hotmail.com">nunesxd7@hotmail.com</a>

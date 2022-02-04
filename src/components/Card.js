@@ -5,17 +5,6 @@ export default function Card({ i, title, leftSide, rightSide }) {
     <div className="card">
       <div className="card-body">
         <h4 className="card-title">{title}</h4>
-        {/* <ol id={`leftSide-${i}`} className="list-group">
-          {leftSide.map((eachLeftItem, ileft) => (
-            <li key={`left-${ileft}`} >
-              <a
-                className="list-group-item list-group-item-action"
-                href={`#${title.replace(/\s/g, '-')}-item-${ileft}`}>
-              {eachLeftItem}
-              </a>
-            </li>
-          ))}
-        </ol> */}
         <ol
           data-bs-spy="scroll"
           data-bs-target={`#leftSide-${i}`}
