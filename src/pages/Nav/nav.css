@@ -29,7 +29,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1099.98px) {
-  nav {
+  nav.d-flex.flex-column {
     grid-area: "nav";
     background-color: rgba(66, 66, 66, 0);
     text-align: center;

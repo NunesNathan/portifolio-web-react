@@ -74,28 +74,11 @@
         box-shadow: -3.5px 7px 7px 2px var(--neithans-grey-9);
   }
 
-  /* .card .list-group {
-    overflow: auto;
-    height: 30vh;
-    width: 32%;
-  }
-
-  .card .list-group li a{
-    background-color: var(--neithans-grey-1);
-  }
-
-  .card .list-group a:is(:hover, :active, :focus) {
-    font-size: 1rem;
-    background-color: #eee;
-  } */
-
   .card .scrollspy {
     position: relative;
     overflow: auto;
     padding: 0;
     height: 30vh;
-    /* margin-left: 1%; */
-    /* width: 67%; */
     width: 100%;
   }
 

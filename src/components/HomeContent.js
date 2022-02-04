@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import photo from '../assets/nathannunesphoto.jpg';
 import landpage, { randomRightArrow } from '../pages/Home/home-data';
 
@@ -22,26 +23,28 @@ export default function HomeContent() {
         })}
       </div>
       <div className='home-buttons'>
-        <button
-          onMouseEnter={({ target: {lastChild} }) => {
-              setId(setInterval(() => {
-                const newArrow = randomRightArrow();
-                if (`${lastChild.classList[0]} ${lastChild.classList[1]}` !== newArrow) {
-                  lastChild.classList = newArrow;
-                } else {
-                  lastChild.classList = randomRightArrow();
-                }
-              }, 100));
-            }}
-          onMouseLeave={({ target: { lastChild } }) => {
-              clearInterval(id);
-              lastChild.classList = 'fas fa-caret-right';
-            }}
-          type='button'
-          className='projects-link'>
-          <p>Me conheça melhor!</p>
-          <i className="fas fa-long-arrow-alt-right" />
+        <Link to='/about'>
+          <button
+            onMouseEnter={({ target: {lastChild} }) => {
+                setId(setInterval(() => {
+                  const newArrow = randomRightArrow();
+                  if (`${lastChild.classList[0]} ${lastChild.classList[1]}` !== newArrow) {
+                    lastChild.classList = newArrow;
+                  } else {
+                    lastChild.classList = randomRightArrow();
+                  }
+                }, 100));
+              }}
+            onMouseLeave={({ target: { lastChild } }) => {
+                clearInterval(id);
+                lastChild.classList = 'fas fa-caret-right';
+              }}
+              type='button'
+            className='projects-link'>
+            <p>Me conheça melhor!</p>
+            <i className="fas fa-long-arrow-alt-right" />
           </button>
+        </Link> 
       </div>
       <a className="mail-to" href="mailto:nunesxd7@hotmail.com">nunesxd7@hotmail.com</a>
     </div>);

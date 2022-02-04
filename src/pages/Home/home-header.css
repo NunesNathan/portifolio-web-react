@@ -1,4 +1,5 @@
 @media (max-width: 767.98px) {
+
   .absolute {
     background-color: var(--neithans-grey-7);
     box-shadow: 0 3px 3px 1px var(--neithans-grey-9);
@@ -20,6 +21,26 @@
 }
 
 @media (min-width: 768px) and (max-width: 1099.98px) {
+  #root .wrapper {
+    width: 100vw;
+  }
+
+  .absolute {
+    background-color: var(--neithans-grey-7);
+    box-shadow: 0 3px 10px 8px var(--neithans-grey-9);
+  }
+
+  .absolute nav {
+    display: flex;
+    margin: 0.3vh 0 2vh 0;
+    justify-content: space-evenly;
+    list-style-type: none;
+    height: 5.8vh;
+  }
+
+  .absolute nav li {
+    margin-top: 1vh;
+  }
 }
 
 @media (min-width: 1100px) {

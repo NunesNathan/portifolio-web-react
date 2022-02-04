@@ -7,11 +7,11 @@ import './home-content.css'
 export default class Home extends Component {
   render() {
     return (
-      <>
+      <div className='wrapper'>
         <HomeHeader />
         <main className="home"> 
           <HomeContent />
         </main>
-      </>);
+      </div>);
   }
 }

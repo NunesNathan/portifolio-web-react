@@ -79,6 +79,109 @@
 }
 
 @media (min-width: 768px) and (max-width: 1104.98px) {
+  .home-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home-content .land-photo {
+    width: 15vw;
+    height: 42%;
+    border-radius: 10%;
+    margin-top: 23vh;
+    margin-left: 15vw;
+    opacity: 90%;
+    box-shadow: 1px -3px 50px 23px var(--neithans-grey-9);
+  }
+
+  .land-photo-back {
+    display: none;
+  }
+
+  .back-presentation {
+    box-shadow: 0px 0px 8px 3px var(--neithans-grey-9);
+    position: absolute;
+    width: 70vw;
+    height: 42vw;
+    z-index: -1;
+    top: 25%;
+    margin: auto;
+  }
+
+  .landpage-presentation {
+    margin-top: 19vh;
+    max-width: 50%;
+    margin-left: 4.5vw;
+    padding-right: 10vw;
+    text-align: center;
+  }
+
+  .home-buttons {
+    text-align: center;
+    margin-left: 3vw;
+  }
+
+  .projects-link {
+    opacity: 70%;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 15vh;
+    width: 60vw;
+    background: linear-gradient(
+    to top,
+    var(--neithans-grey-6) 10%,
+    var(--neithans-grey-7) 45%,
+    var(--neithans-grey-8) 80%,
+    var(--neithans-grey-10) 100%);
+    padding: 0 1vw;
+    margin-top: 13vh;
+    box-shadow: 0px 0px 4px 2px var(--neithans-grey-9);
+  }
+
+  .projects-link p {
+    margin-bottom: 0.4vh;
+    margin-right: 4vw;
+  }
+
+  .projects-link i {
+    margin-right: 4vw;
+    margin-bottom: 1vh;
+    font-size: 3.5rem;
+  }
+
+  .mail-to {
+    position: absolute;
+    bottom: 3px;
+    text-align: center;
+    display: block;
+    margin-top: 1vh;
+  }
+
+  .mail-to:hover {
+    font-size: inherit;
+    color: var(--neithans-grey-10);
+  }
+
+  @media (max-width: 950.98px) {
+  .projects-link {
+    font-size: 1.45rem;
+    height: 10vh;
+    margin-top: 5vh;
+  }
+
+  .home-content .land-photo {
+    margin-left: 7vw;
+  }
+
+  .landpage-presentation {
+    margin-left: 3vw;
+    padding:0 2.4vw 0 0;
+  }
+  }
 }
 
 @media (min-width: 1105px) {
@@ -104,7 +207,7 @@
     margin-right: 3vw;
     margin-top: 10vh;
     border-radius: 7%;
-    opacity: 90%;
+    opacity: 98%;
     box-shadow: 2px -5px 80px 110px var(--neithans-grey-9);
   }
 
