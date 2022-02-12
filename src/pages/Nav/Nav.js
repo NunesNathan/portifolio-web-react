@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from "../../assets/nathannunesphoto.jpg"
+import photo from '../../assets/nathannunesphoto.jpg'
 import { Presentation, Links, Footer } from './nav-data';
 import './nav.css'
 import LinkTo from '../../components/LinkTo';

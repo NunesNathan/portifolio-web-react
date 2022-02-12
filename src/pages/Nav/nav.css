@@ -97,8 +97,7 @@
   }
 
   .nav-footer {
-    position: absolute;
-    bottom: 2vh;
+    margin-top: 16%;
   }
 
   .name {

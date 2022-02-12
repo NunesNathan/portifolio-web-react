@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
@@ -7,24 +7,24 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Projects from './pages/Projects/Projects';
 
-class App extends Component {
-  routes = () => (
+export default function App() {
+  const routes = () => (
     <Switch>
       <Route
-        path='/'
+        path="/"
         exact
       >
         <Home />
       </Route>
       <Route
-        path='/about'
+        path="/about"
         exact
       >
         <Nav />
         <About />
       </Route>
       <Route
-        path='/projects'
+        path="/projects"
         exact
       >
         <Nav />
@@ -33,15 +33,10 @@ class App extends Component {
     </Switch>
   )
 
-  render() {
-    return(
-      <>
-        {
-          this.routes()
-        }
-      </>
-      );
-    }
+  return(
+    <>
+      {
+        routes()
+      }
+    </>);
 }
-
-export default App;

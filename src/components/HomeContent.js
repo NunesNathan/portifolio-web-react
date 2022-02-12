@@ -5,7 +5,6 @@ import landpage, { randomRightArrow } from '../pages/Home/home-data';
 
 export default function HomeContent() {
   const [id, setId] = useState('');
-  console.log(randomRightArrow())
   return (
     <div className="home-content">
       <img src={photo} alt="backImagem de Nathan Nunes" className="land-photo-back" />

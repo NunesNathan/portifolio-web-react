@@ -1,3 +1,15 @@
+@media (max-width: 390.98px) {
+  .absolute {
+    display: none;
+  }
+}
+
+@media (max-height: 517.98px) {
+  .absolute {
+    display: none;
+  }
+}
+
 @media (max-width: 767.98px) {
 
   .absolute {
@@ -6,9 +18,10 @@
   }
 
   .absolute nav {
+    padding-top: 1vh;
     display: flex;
     flex-direction: row;
-    margin: 0.3vh 0 2vh 0;
+    margin-bottom: 2vh;
     justify-content: space-evenly;
     list-style-type: none;
     height: 5.3vh;
@@ -71,6 +84,7 @@
   }
 
   .absolute li > a {
+    font-size: 1vw;
     margin: 0 2vw;
   }
 
